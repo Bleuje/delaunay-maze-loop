@@ -11,7 +11,7 @@ C++ project about making this animation :
 
 ### Algorithm
 
-1) Make a 2D triangulation around a shape (constrained delaunay triangulation with CGAL)
+1) Make a 2D triangulation in a shape (constrained delaunay triangulation with CGAL)
 2) Define the graph of the triangulation
 3) Make a tree from the graph (depth/breadth first search for example, but here a priority queue with random weights is used)
 4) Rotate around the tree following one side and build a curve with one new point for each visited triangle
