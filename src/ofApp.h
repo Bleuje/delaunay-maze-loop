@@ -24,7 +24,7 @@ typedef CDT::Point Point;
 typedef K::Point_2 Point_2;
 
 class ofApp : public ofBaseApp{
-    CDT cdt;
+    CDT cdt; // the constrained delaunay triangulation
 
     int n = 50; // number of points to define the boundary
     float R = 1.0; // Parameter for size of the shape
