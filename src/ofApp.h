@@ -58,7 +58,7 @@ class ofApp : public ofBaseApp{
     ofVec2f curvePos(const float& p);
     ofVec2f smoothCurvePos(const float& p); // curve parametrization with p from 0 to 1
 
-    int numFrames = 50; // number of gif frames
+    int numFrames = 40; // number of gif frames
     int m = 600; // number of drawn objects
 
     ofFbo fbo;
@@ -81,3 +81,4 @@ public:
     void gotMessage(ofMessage msg);
 
 };
+

@@ -240,12 +240,12 @@ void ofApp::draw(){
 
     for(int i=0;i<m;i++)
     {
-        int K = 16;
+        int K = 13;
         for(int j=0;j<K;j++)
         {
-            float p = 1.0*(i+t+0.05*j)/m;
+            float p = 1.0*(i+t+0.045*j)/m;
 
-            float sz = 0.5+4.5*pow(1.0*(j+1)/K,1.75);
+            float sz = 0.3+5.0*pow(1.0*(j+1)/K,1.75);
 
             ofVec2f pos = smoothCurvePos(p);
 
