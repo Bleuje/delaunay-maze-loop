@@ -2,7 +2,7 @@
 
 C++ project about making this animation :
 
-![image](mazeloop1.gif)
+![image](mazeloop2.gif)
 
 ### Using :
 
