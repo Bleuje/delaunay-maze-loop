@@ -6,7 +6,7 @@ C++ project about making this animation :
 
 ### Using :
 
-* CGAL library (not the openFrameworks addon... take care of adding compilation flags)
+* CGAL library (not the openFrameworks addon)
 * openFrameworks
 
 ### Algorithm
