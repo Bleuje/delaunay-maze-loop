@@ -187,7 +187,7 @@ void ofApp::buildLengths()
 }
 
 // idea for parametrization with constant speed : use binary search on cumulative sums array
-ofVec2f ofApp::curvePos(const float& p)
+ofVec2f ofApp::curvePos(float p)
 {
     float p2 = std::fmod(p+2020,1.0);
     double totalLength = cumLengthSums[NPoints];
@@ -210,7 +210,7 @@ ofVec2f ofApp::curvePos(const float& p)
 }
 
 // trying to get smoother curve corners with an average
-ofVec2f ofApp::smoothCurvePos(const float& p)
+ofVec2f ofApp::smoothCurvePos(float p)
 {
     float eps = 0.2/m;
     ofVec2f v1 = curvePos(p-eps/2);

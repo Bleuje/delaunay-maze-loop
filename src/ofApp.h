@@ -3,7 +3,7 @@
 #include "ofMain.h"
 
 #include <string>
-
+#include <gmp.h>
 #include <CGAL/Exact_predicates_inexact_constructions_kernel.h>
 #include <CGAL/Constrained_Delaunay_triangulation_2.h>
 #include <CGAL/Delaunay_mesher_2.h>
@@ -55,8 +55,8 @@ class ofApp : public ofBaseApp{
     ofVec2f pointPos(Vertex_handle v,Vertex_handle v1,Vertex_handle v2);
     void buildLengths();
     //float pSegment = 0.0;
-    ofVec2f curvePos(const float& p);
-    ofVec2f smoothCurvePos(const float& p); // curve parametrization with p from 0 to 1
+    ofVec2f curvePos(float p);
+    ofVec2f smoothCurvePos(float p); // curve parametrization with p from 0 to 1
 
     int numFrames = 40; // number of gif frames
     int m = 600; // number of drawn objects
